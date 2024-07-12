@@ -1,0 +1,22 @@
+
+        .flexbox{
+            background-color: aquamarine;
+            padding: 1px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .flexbox>div{
+            background-color: aqua;
+            margin: 5px;
+            height: 50px;
+            width: 10px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 18px;
+            flex: auto;
+
+
+
+        }
+  
