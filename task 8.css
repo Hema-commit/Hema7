@@ -1,0 +1,30 @@
+date{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vb;
+    align-items: center;
+    background: fixed;
+}
+input[type="date"]{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+    border: 0;
+    background: fixed;
+    border-radius: 10px;
+    outline: none;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: aqua;
+    text-transform: uppercase;
+    box-shadow: 0 4px 20px rgb(52, 221, 75);
+}
+
