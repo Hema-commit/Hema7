@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background:#e6e1e1;
+}
+.header {
+    background: rgba(238, 96, 96, 0.836);
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    padding: 5px;
+    color: white;
+}
+.content {
+    display: flex;
+}
+.user {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 50%;
+    padding: 20px;
+}
+.nav {
+    width: 20%;
+    background: #faf9f9;
+}
+.direction {
+    width: 70%;
+}
+h1 {
+    margin:40px 70px;
+}
+form {
+    margin: 20px 70px;
+}
+label {
+    color: rgba(199, 50, 75, 0.836);
+    font-weight: 800;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color:#ddd6d683;
+}
+li {
+    list-style: none;
+    padding: 15px 0px;
+}
+.active {
+ border-left: 5px solid rgb(211, 83, 83) ;
+ padding-left: 40px;
+ background: #ddd6d683;
+}
+.in-active {
+    padding-left: 40px;
+   }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Dribble</h2>
+    </div>
+    <div class="content">
+        <div class="nav">
+           <div class="user">
+            <img src="img/images.jpeg" alt="" width="100px">
+            <h5>GURUNIDHI</h5>
+           </div>
+           <div class="nav-list">
+            <ul>
+                <li class="active">Profile</li>
+                <li class="in-active">Work Opportunities</li>
+                <li class="in-active">Password</li>
+                <li class="in-active">Social Profiles</li>
+                <li class="in-active">Invitations</li>
+                <li class="in-active">Sessions</li>
+                <li class="in-active">Applications</li>
+            </ul>
+           </div>
+        </div>
+        <div class="direction">
+            <h1>Profile</h1>
+            <form>
+                <label for="name">NAME</label><br>
+                <input type="text" name="name" placeholder="GURUNIDHI"><br><br><br>
+                <label for="username">USERNAME</label><br>
+                <input type="text" name="username" placeholder="gurunidhioff"><br><br><br>
+                <label for="email">EMAIL</label><br>
+                <input type="email" name="email" placeholder="gurunidhi22@gmail.com"><br><br><br>
+                <label for="location">LOCATION</label><br>
+                <input type="text" name="location" placeholder="Madavaram"><br><br><br>
+                <label for="website">WEBSITE</label><br>
+                <input type="text" name="website" placeholder="...."><br><br><br>
+                <label for="bio">BIO</label><br>
+                <input type="text" name="bio" placeholder="....">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
