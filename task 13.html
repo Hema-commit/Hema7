@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+    <style>
+        .image {
+            width: 100px;
+            height: 100px;
+            display: flex;
+
+        }
+
+        .image img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px;
+        }
+
+        body {
+            background: #e6e1e1;
+        }
+
+        .header {
+            background: rgba(238, 96, 96, 0.836);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            padding: 5px;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+        }
+
+
+
+        img {
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        .nav {
+            width: 30%;
+            background: #faf9f9;
+        }
+
+        .direction {
+            width: 70%;
+        }
+
+        h1 {
+            margin: 40px 70px;
+        }
+
+        form {
+            margin: 20px 70px;
+        }
+
+        label {
+            color: rgba(199, 50, 75, 0.836);
+            font-weight: 800;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border-color: #ddd6d683;
+        }
+
+        li {
+            list-style: none;
+            padding: 30px 10px;
+        }
+
+        .active {
+            border-left: 5px solid rgb(211, 83, 83);
+            padding-right: 0%;
+            background: #ddd6d683;
+        }
+
+        .in-active {
+            padding-right: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <center style="font-style: italic;">
+            <h2> Dribble </h2>
+        </center>
+    </div>
+    <div class="content">
+        <div class="nav">
+            <p>
+            <h3>User Profile</h3>
+            </p>
+            <div class="image">
+                <img src="img/image.png" alt="">
+
+                <h3>Fatemeh Rabie</h3>
+                <br>
+                <br>
+                <h5>follow</h5>
+
+
+
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="active">User Info</li>
+                    <li class="in-active">Favourites</li>
+                    <li class="in-active">Watchlist</li>
+                    <li class="in-active">settings</li>
+                    <li class="in-active">Notification</li>
+                    <li class="in-active">Logout</li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="direction">
+            <div class="image">
+                <img src="img/download.jpeg" alt="">
+                <h3>Fatemeh Rabie</h3>
+            </div>
+            <hr>
+
+            Name
+            <br>
+            <input type="text" placeholder="First name" size="10">
+            <br>
+            <br>
+            Full Name
+            <input type="text" placeholder="Initial name" size="40">
+            <br>
+            <br>
+            E-Mail
+            <br>
+            <input type="text" placeholder="E-Mail/ID">
+            <br>
+            <br>
+            Phone Number
+            <br>
+            <input type="text" placeholder="##########" size="40">
+            <br>
+            <br>
+            location
+            <br>
+            <input type="text" placeholder=" Address" size="132">
+            <br>
+            <br>
+            Postal Code
+            <br>
+            <input type="text" placeholder="pincode">
+            <br>
+            <br>
+            <center>
+                <button><h3>Save Changes</h3></button> 
+            </center>
+
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
