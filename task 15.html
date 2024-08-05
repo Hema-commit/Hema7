@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+            width: 100px;
+            height: 100px;
+            display: flex;
+
+        }
+
+        .image img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 10px;
+        }
+
+        body {
+            background: #9affcc;
+        }
+
+        .header {
+            background: rgba(238, 96, 96, 0.836);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            padding: 5px;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+        }
+
+
+
+        img {
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        .nav {
+            width: 30%;
+            background: #ffb4b4;
+        }
+
+        .direction {
+            width: 70%;
+        }
+
+        h1 {
+            margin: 40px 70px;
+        }
+
+        form {
+            margin: 20px 70px;
+        }
+
+        label {
+            color: rgba(199, 50, 75, 0.836);
+            font-weight: 800;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border-color: #ddd6d683;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 10px;
+        }
+
+        .active {
+            border-left: 5px solid rgb(0, 225, 255);
+            padding-right: 0%;
+            background: #00eeff;
+
+        }
+
+        .in-active {
+            padding-right: 0%;
+        }
+
+        .sub-divison {
+            font-size: small;
+            border-left: 5px solid rgb(0, 225, 255);
+            padding-right: 0%;
+            background: #00eeff;
+        }
+
+        .sub-div {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            
+            <div class="image">
+                <img src="img/download.jpeg" alt="">
+                <h3>Fatemeh Rabie 🔽</h3>
+                <br>
+            </div>
+            <hr>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="in-active">Dashboard</li>
+                    <li class="in-active">Rooms</li>
+                    <li class="in-active">Devices</li>
+                    <li class="in-active">Analytics</li>
+                    <li class="sub-divison">Settings</li>
+                   
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+           
+        <div class="direction">
+            <h2 style="color: black;">Settings</h2>
+            <hr>
+             <button class="active">Edit Profile</button>
+             <button>Preferences</button>
+             <button>Security</button>
+             <button>Data Privacy</button>
+
+            <div class="image">
+                <img src="img/download.jpeg" alt="">
+                <h3>Fatemeh Rabie</h3>
+                <br>
+                
+            </div>
+
+            
+            Name
+            <br>
+            <input type="text" placeholder="First name" size="10">
+            <br>
+            <br>
+            Full Name
+            <input type="text" placeholder="Initial name" size="40">
+            <br>
+            <br>
+            E-Mail
+            <br>
+            <input type="text" placeholder="E-Mail/ID">
+            <br>
+            <br>
+            Phone Number
+            <br>
+            <input type="text" placeholder="##########" size="40">
+            <br>
+            <br>
+            <h2 style="color: black;">Personal Information</h2>
+            <br>
+            <br>
+            location
+            <br>
+            <input type="text" placeholder=" Address" size="132">
+            <br>
+            <br>
+            Country
+            <br>
+            <input type="text" placeholder="Country">
+            <br>
+            <br>
+            city
+            <br>
+           
+            <input type="text" placeholder="Hai Phong">
+            <br>
+            <br>
+            Zip code
+            <br>
+            <input type="text" placeholder="180000">
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+            <button><h2  style="color: black;">Save changes</h2></button>
+            </center>
+        </div>    
+       
+
+    </div>
+
+</body>
+
+</html>
