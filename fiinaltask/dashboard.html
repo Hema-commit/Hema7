@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</head>
+<body>
+ <div class="sidebar">
+   <img src="img/15.jpg"  alt="User Profile" class="profile-pic-round">
+     <center> <h3>HEMZ</h3> </center>
+   <br>
+   <br>
+   
+    <h2>Apps</h2>
+    <ul >
+      <li><i class="fas fa-chart-line"></i> Dashboard</li>
+      <li><i class="fas fa-envelope"></i> Mailbox</li>
+      <li><i class="fas fa-folder"></i> File Manager</li>
+      <li><i class="fas fa-calendar"></i> Calendar</li>
+      <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+    </ul>
+  </div>
+  <div class="main">
+   
+  <div class="top-nav">
+    <!-- Left -->
+    <div class="nav-left"><h1>Dashboard</h1></div>
+
+    <!-- Center -->
+    <div class="nav-center">
+      <div class="active">Applications</div>
+      <div>Reports</div>
+      <div>Projects</div>
+    </div>
+
+    <!-- Right -->
+    <div class="nav-right">
+      <div class="search-icon">🔍</div>
+      <div class="notification">🔔</div>
+      <div class="user-section">
+        <img src="https://flagcdn.com/us.svg" class="flag" alt="flag">
+        <div class="avatar-wrapper">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="avatar" class="avatar">
+          <div class="status-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       
+      <div class="main-container">
+    
+      <div class="card-grid">
+      <!-- Sales -->
+      <div class="card sales">
+        <div class="card-icon">💰</div>
+        <div class="card-title">Today's Sales</div>
+        <div class="card-value">$38,211</div>
+        <div class="card-change">▼ 4%</div>
+      </div>
+
+      <!-- Active Users -->
+      <div class="card users">
+        <div class="card-icon">👤</div>
+        <div class="card-title">Active Users</div>
+        <div class="card-value">23,491</div>
+        <div class="card-change">▲ 12%</div>
+      </div>
+
+      <!-- Downloads -->
+      <div class="card downloads">
+        <div class="card-icon">⬇️</div>
+        <div class="card-title">Downloads</div>
+        <div class="card-value">140,390</div>
+        <div class="card-change">▲ 7%</div>
+      </div>
+    </div>
+    
+   <br>
+   <br>
+
+   
+    <section class="tasks">
+       <div class="dashboard">
+
+    <!-- Active Tasks -->
+    <div class="card">
+      <h3>✅ Active Tasks</h3>
+      <div class="task">
+        <div class="task-icon" style="background: #4CAF50;">✔</div>
+        <div class="task-info">
+          <div class="task-title">Dashboard UI optimisations</div>
+          <div class="task-user">Oskar Hudson</div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-icon" style="background: #2196F3;">📬</div>
+        <div class="task-info">
+          <div class="task-title">Mailbox cleanup</div>
+          <div class="task-user">Woodrow Hawkins</div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-icon" style="background: #9C27B0;">🔧</div>
+        <div class="task-info">
+          <div class="task-title">Header scroll bugfix</div>
+          <div class="task-user">Sky Meyers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Todo Tools -->
+    <div class="card">
+      <h3>🧰 Tools (Todo)</h3>
+      <div class="todo-item"><input type="checkbox" checked /> Dashboard UI optimisations</div>
+      <div class="todo-item"><input type="checkbox" checked /> Mailbox cleanup</div>
+      <div class="todo-item"><input type="checkbox" /> Header scroll bugfix</div>
+      <div class="todo-item"><input type="checkbox" /> New UX redesign</div>
+    </div>
+
+    <!-- In Progress Tasks -->
+    <div class="card">
+      <h3>🔄 In Progress</h3>
+      <div class="task">
+        <div class="task-icon" style="background: #03A9F4;">🔄</div>
+        <div class="task-info">
+          <div class="task-title">Dashboard UI optimisations</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 65%; background: #03A9F4;"></div></div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-icon" style="background: #FF5722;">🛠️</div>
+        <div class="task-info">
+          <div class="task-title">Localization for file manager</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 40%; background: #FF5722;"></div></div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-icon" style="background: #E91E63;">🧪</div>
+        <div class="task-info">
+          <div class="task-title">New E-commerce UI</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 20%; background: #E91E63;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+   
+    
+
+      <!-- Main -->
+    <main>
+      
+     
+      <section class="main-row">
+
+         <section class="chart-section">
+       <h3>Earnings</h3>
+      <canvas id="earningsChart"></canvas>
+    </section>
+
+        <!-- Report -->
+        <div class="report-box">
+          <h4>Report <span class="updated">updated 5 min ago</span></h4>
+          <p>Duis fringilla eget velit sit amet lobortis. Donec rutrum arcu auctor varius cursus.</p>
+          <ul class="report-list">
+            <li>Neptune - v1.0 <span class="green">↑ 14%</span></li>
+            <li>Space - v1.2 <span class="red">↓ 7%</span></li>
+            <li>Lime - v1.0.3 <span class="green">↑ 21%</span></li>
+            <li>Circl - v2.3 <span class="green">↑ 17%</span></li>
+            <li>Connect - v1.7 <span class="red">↓ 3%</span></li>
+          </ul>
+        </div>
+      </section>
+       <!-- Cards -->
+      <div class="dashboard-cards">
+    <div class="card">
+      <h4>Tasks Completed</h4>
+      <p class="value">1,871</p>
+      <p class="percentage up">▲ 18%</p>
+    </div>
+
+    <div class="card">
+      <h4>Engagement</h4>
+      <p class="value">45,661</p>
+      <p class="percentage down">▼ 25%</p>
+    </div>
+
+    <div class="card">
+      <h4>Balance</h4>
+      <p class="value">$218,655</p>
+      <p class="percentage up">▲ 9%</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+
+ </main>
+    
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+   <div class="dashboard-grid">
+        <div class="card quisque-paragraph-card">
+            <div class="card-header">
+                <h3>About </h3>
+                </div>
+            <div class="card-content">
+                <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde optio perferendis porro, saepe accusamus facilis officia eum, laboriosam quaerat aut animi et illo vel consequuntur dolores voluptatem perspiciatis excepturi recusandae molestiae minus. Iusto facere nam corrupti distinctio quae nisi, fugit, pariatur illum nostrum totam asperiores soluta, enim quibusdam odio voluptatibus.  
+                </p>
+                </div>
+        </div>
+
+        <div class="card connection-request-card">
+            <div class="card-header">
+                <h3>Connection Request</h3>
+            </div>
+            <div class="card-content">
+                <div class="connection-profile">
+                    <img src="img/15.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-info">
+                        <h4>Woodrow Hawkins</h4>
+                        <p class="profile-status">New Connection</p>
+                    </div>
+                </div>
+                <div class="connection-actions">
+                    <button class="btn btn-accept">Accept</button>
+                    <button class="btn btn-decline">Decline</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
